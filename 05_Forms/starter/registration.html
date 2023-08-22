@@ -26,5 +26,59 @@
     
     <!-- insert form here -->
     
+    <ul>
+        <form action="login">
+            <fieldset>
+                <ul>
+                    <legend>Your Details</legend>
+                    <li>
+                        <label>First Name</label>
+                        <input type="text" name="First Name" required autofocus>
+                    </li>
+                    <li>
+                        <label>Surname</label>
+                        <input type="text" name="Last Name" required>
+                    </li>
+                    <li>
+                        <label>Position</label>
+                        <input type="text" name="Position" required>
+                    </li>
+                    <li>
+                        <label>Email</label>
+                        <input type="email" name="email" id="email" placeholder="something@domain.com" required>
+                    </li>
+                    <li>
+                        <label>Telephone</label>
+                        <input type="tel" name="tel" id="tel" placeholder="+447500000000" required>
+                    </li>
+                </ul>  
+            </fieldset>
+            <fieldset>
+                <ul>
+                    <li>
+                        <label>Select a course</label>
+                        <select name="course" id="course">
+                            <option value="JS">Programming With JavaScript</option>
+                            <option value="HTML">Developing Web Apps with HTML</option>
+                            <option value="DRW">Developing Responsive Websites</option>
+                            <option value="JQuery">Using JQuery</option>
+                        </select>
+                    </li>
+                    <label>Number of delegates</label>
+                    <input type="number" name="delegates" id="delegates" >
+                    </li>
+                    <li>
+                        <label>Select a date</label>
+                        <input type="date" name="date" id="date" >
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </fieldset>  
+        </form>
+    </ul>
+
 </body>
 </html>
